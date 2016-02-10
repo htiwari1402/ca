@@ -1,0 +1,14 @@
+<div class="row" ng-controller="examController"  style="margin-top:100px;width:60%;">
+<div class="alert alert-success" ng-show="success">
+  <strong>Success!</strong> Exam created successfully !!!.
+</div>
+<input type="text"   class="form-control" id="examName" ng-model="exam.name" placeholder="Exam Name">
+<br>
+<input type="text"   class="form-control" id="subject" ng-model="exam.subject" placeholder="Subject">
+<br>
+<input type="text"   class="form-control" id="durationHrs" ng-model="exam.durationHrs" placeholder="Duration in Hrs">
+<br>
+<input type="text"   class="form-control" id="durationMin" ng-model="exam.durationMin" placeholder="Duration in Min">
+<br><br>
+<button type="submit" class="btn btn-danger btn-lg" ng-click="createExam();">Create Exam</button>
+</div>

@@ -1,0 +1,30 @@
+<div  ng-controller="addQuestionCtrl"  style="margin-top:40px;">
+<h1>Add Questions for {{ selectedExam.name  }}</h1>
+<br>
+<div class="alert alert-success"  ng-show="success">
+  <strong>Question added to exam : {{ selectedExam.name  }}</strong> 
+</div>
+<div class="row"><span class="col-sm-3">Question</span>
+<textarea name="message" id="message" ng-model="question.text" required="required" class="col-sm-6" rows="8" placeholder="Message"></textarea>
+<span class="col-sm-3">Difficulty: <input type="text" ng-model="question.difficulty"></span>
+</div>
+<div class="row">
+<span class="col-sm-3">Select the number of options</span>
+<div class="col-sm-6">
+<select  ng-change="generateOptions();" ng-model="question.noOfOption">
+<option >--Select--</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+</select>
+
+</div>
+</div>
+<div >
+<div id="optionDiv" class="container-fluid" >
+</div>
+</div>
+<button type="submit" class="btn btn-danger btn-lg" ng-click="insertQuestion();">Add Question</button>
+</div>

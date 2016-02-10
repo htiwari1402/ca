@@ -1,0 +1,24 @@
+<div class="row" ng-controller="takeExamCtrl"  style="margin-top:40px;width:100%;margin-left:2%;">
+<div ng-repeat="each in question" >
+<ol>
+<div ng-if="$index ==pageID"  style="min-height:300px;">
+<h3><li>{{each.text}}</li></h3>
+<br>
+<ol>
+<li ng-repeat="opt in each.option[0]">
+<span  >&nbsp;&nbsp;&nbsp;<input type="checkbox" ng-model="opt.isCorrect" ng-true-value="1" ng-false-value="0">
+&nbsp;&nbsp;&nbsp;{{ opt.optionText }} 
+</span></li>
+</ol>
+<br>
+</div>
+</ol>
+</div>
+<button type="button" ng-disabled="pageID  <=  0" class="btn btn-success btn-lg" ng-click="pageID = pageID - 1">Back</button>
+&nbsp;&nbsp;&nbsp;
+<button type="button" ng-disabled="pageID >= noOfQuestions-1" class="btn btn-success btn-lg" ng-click="pageID = pageID + 1">Next</button>
+&nbsp;&nbsp;&nbsp;
+<button type="button" style="display:inline-block;float:right;margin-right:2%" ng-disabled="pageID != noOfQuestions-1" class="btn btn-success btn-lg" ng-click="submitExam();">Submit</button>
+
+
+</div>

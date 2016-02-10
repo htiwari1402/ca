@@ -1,0 +1,7 @@
+<div class="row" ng-controller="selectExamController"  style="margin-top:40px;width:60%;">
+<h2>Exam Selection</h2>
+<br><br>
+<select class="form-control" ng-options="exam  as  exam.name  for   exam  in  exams  track  by  exam.id"  ng-model="selectedExam" 
+ng-init="selectedExam = 1" ng-change="selectQuestion();">
+</select>
+</div>
