@@ -16,12 +16,15 @@ $j = 1;
 foreach($model as $key=>$data)
 {
 	$modelArray[$i]['question'] = $data['id'];
+	$modelArray[$i]['questionText'] = $data['text'];
+	$optNo = 1;
 	foreach($data['option'][0] as $k=>$d)
 	{
 		if($d['isCorrect'] == 1)
 		{
-			$modelArray[$i]['answer'][] = $d['id'];
+			$modelArray[$i]['answer'][] = $optNo;;
 		}
+		$optNo++;
 	}
 	$i++;
 }
@@ -29,12 +32,15 @@ $i = 1;
 foreach($input as $key=>$data)
 {
 	$inputArray[$i]['question'] = $data['id'];
+	$inputArray[$i]['questionText'] = $data['text'];
+	$optNo = 1;
 	foreach($data['option'][0] as $k=>$d)
 	{
 		if($d['isCorrect'] == 1)
 		{
-			$inputArray[$i]['answer'][] = $d['id'];
+			$inputArray[$i]['answer'][] = $optNo;
 		}
+		$optNo++;
 	}
 	$i++;
 }
@@ -44,17 +50,19 @@ $resultReport = array();
 foreach($inputArray as $key=>$data)
 {
 	$maxMarks++;
-	$resultReport[$data['question']]['inputAnswer'] = implode(",",$data['answer']);
-	$resultReport[$data['question']]['correctAnswer'] = implode(",",$modelArray[$key]['answer']);
+	$resultReport['qset'][$data['question']]['question'] = $data["questionText"];
+	$resultReport['qset'][$data['question']]['inputAnswer'] = implode(",",$data['answer']);
+	$resultReport['qset'][$data['question']]['correctAnswer'] = implode(",",$modelArray[$key]['answer']);
 	if($data['answer'] == $modelArray[$key]['answer'])
 	{
-		$resultReport[$data['question']]['isCorrect'] = 1;
+		$resultReport['qset'][$data['question']]['isCorrect'] = 1;
 		$accuracy ++;
 	}
 	else {
-		$resultReport[$data['question']]['isCorrect'] = 0;
+		$resultReport['qset'][$data['question']]['isCorrect'] = 0;
 	}
 }
+//print_r($model);
 $resultReport['marks'] = $accuracy;
 $resultReport['mm'] = $maxMarks;
 echo json_encode($resultReport);

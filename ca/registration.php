@@ -4,8 +4,9 @@
 <!DOCTYPE html>
 <html lang="en-US"  xmlns:ng="http://angularjs.org" id="ng-app" ng-app="edusar">
 <head>
-  <title>eduSar</title>
+  <title>edusar - Online IT Training</title>
   <meta charset="utf-8">
+   <meta name="description" content='Online Training. Learn Java, Spring framework, PHP, MySql, AngularJS, Bootstrap online.'>
   <meta name="viewport" content="width=device-width, initial-scale=1">
  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 
   <link rel="stylesheet" href="./css/styles.css">
@@ -38,8 +39,6 @@
     <li><a href="index.php"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
     <li><a href="fees.php"><span class="glyphicon glyphicon-usd"></span>&nbsp;Fees</a></li>
     <li><a href="contactUs.php"><span class="glyphicon glyphicon-earphone"></span>&nbsp;Contact Us</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       
     </ul>
     </div>
@@ -90,8 +89,13 @@
     <div class="form-group">
       <label class="control-label col-sm-2" >Course:</label>
       <div class="col-sm-10">
-        <input type="text"   class="form-control" id="course" ng-model="course" placeholder="Enter Course"
-        disabled ng-init="course = '<?php  echo $course;?>' " >
+         <select class="form-control" id="course" ng-model="course" placeholder="Enter Course"
+         ng-init="course = '<?php  echo $course;?>' " >
+         <option value="PHP MySQL">PHP MySQL</option>
+         <option value="Angular Bootstrap">Angular Bootstrap</option>
+         <option value="JAVA">JAVA</option>
+         <option value="Spring Framework">Spring Framework</option>
+         </select>
       </div>
     </div>
     <div class="form-group">

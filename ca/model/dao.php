@@ -106,8 +106,11 @@ class DAO
     		$id = $data['id'];
     		$sql = "select * from `edusarco_exams`.`option` where `questionId` = $id " ;
     		$question[$key]['option'][] = $this->fetch($sql);
-    		
+    		$sql = "select `name` from `edusarco_exams`.`exam` where `id` = $id";
+    		$examData = $this->fetch($sql);
+    		//$question[$key]['exam'] = $examData[0]['name'];
     	}
+    	
     	return $question;
     }
 }

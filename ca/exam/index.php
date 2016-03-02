@@ -27,6 +27,27 @@
     <script src="http://resources.infolinks.com/js/infolinks_main.js" type="text/javascript"></script> -->
 </head>
 <body >
+<nav class="navbar navbar-inverse navbar-fixed-top"  style="background-color:rgba(3,3,3,0.8);border-radius:0px;">
+  <div class="container-fluid" >
+    <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#"><span id="logo">eduSar</span></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav navbar-right">
+    
+    <li><a href="index.php"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
+    <li><a href="fees.php"><span class="glyphicon glyphicon-usd"></span>&nbsp;Fees</a></li>
+    <li><a href="contactUs.php"><span class="glyphicon glyphicon-earphone"></span>&nbsp;Contact Us</a></li>
+      
+    </ul>
+    </div>
+  </div>
+</nav>
 <div class="container-fluid"   ng-view="">
 <div class="row" ng-controller="examController"  style="margin-top:100px;width:60%;">
 <div class="alert alert-success" ng-show="success">

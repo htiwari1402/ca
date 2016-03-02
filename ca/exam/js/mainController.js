@@ -141,6 +141,7 @@ app.controller('takeExamCtrl',['$scope', '$route', '$routeParams','$http','$loca
              {  
             	 $scope.pageID = 0;
             	 $scope.noOfQuestions = 0;
+            	 
             	var answerArray = [];
             	$scope.qaMap = [];
           	    $http.get('./takeExam.php?id=1')
@@ -155,6 +156,7 @@ app.controller('takeExamCtrl',['$scope', '$route', '$routeParams','$http','$loca
           	    	        });
           	    	        //console.log(JSON.stringify(data));
           	    			$scope.question = data;
+          	    			$scope.examName = data[0].exam;
           	    		});
              }
              $scope.submitExam = function()
@@ -188,7 +190,7 @@ app.controller('reportCtrl',['$scope', '$route', '$routeParams','$http','$locati
      init($scope,$http, $route, $routeParams,$rootScope);
      function init($scope,$http,$route, $routeParams,$rootScope) 
      {  
-    	    
+    	    //console.log(JSON.stringify($rootScope.report));
      }
      var config1 = liquidFillGaugeDefaultSettings();
 	    config1.circleColor = "#FF7777";

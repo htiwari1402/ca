@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-US"  xmlns:ng="http://angularjs.org" id="ng-app" ng-app="edusar">
 <head>
-  <title>eduSar</title>
+  <title>edusar - Online IT Training</title>
   <meta charset="utf-8">
+   <meta name="description" content='Online Training. Learn Java, Spring framework, PHP, MySql, AngularJS, Bootstrap online.'>
   <meta name="viewport" content="width=device-width, initial-scale=1">
  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 
   <link rel="stylesheet" href="./css/styles.css">
@@ -35,8 +36,6 @@
     <li><a href="index.php"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
     <li><a href="fees.php"><span class="glyphicon glyphicon-usd"></span>&nbsp;Fees</a></li>
     <li><a href="contactUs.php"><span class="glyphicon glyphicon-earphone"></span>&nbsp;Contact Us</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       
     </ul>
     </div>
@@ -60,11 +59,11 @@
 <a href="phpMain.php"><button type="button" class="btn btn-success btn-sm">View Course</button></a>
 <br>
 <table style="margin-top:20px;">
-<tr><td>Core PHP&nbsp;&nbsp;</td><td align="right">Rs 5000</td></tr>
-<tr><td>Advance PHP&nbsp;&nbsp;</td><td align="right">Rs 3500</td></tr>
+<tr><td>Core PHP&nbsp;&nbsp;</td><td align="right">Rs 6000</td></tr>
+<tr><td>Advance PHP&nbsp;&nbsp;</td><td align="right">Rs 4500</td></tr>
 <tr><td>Discount&nbsp;&nbsp;</td><td align="right">Rs 500</td></tr>
 <tr><td><hr></td><td><hr></td></tr>
-<tr><td>Total&nbsp;&nbsp;</td><td align="right">Rs 8000</td></tr>
+<tr><td>Total&nbsp;&nbsp;</td><td align="right">Rs 10000</td></tr>
 </table>
 </div>
 </div><br><br><br>
@@ -78,10 +77,10 @@
 <table style="margin-top:20px;">
 <tr><td>Core JAVA&nbsp;&nbsp;</td><td align="right">Rs 6000</td></tr>
 <tr><td>Advance JAVA&nbsp;&nbsp;</td><td align="right">Rs 4000</td></tr>
-<tr><td>Spring framework&nbsp;&nbsp;</td><td align="right">Rs 5000</td></tr>
+<tr><td>Spring framework&nbsp;&nbsp;</td><td align="right">Rs 7000</td></tr>
 <tr><td>Discount&nbsp;&nbsp;</td><td align="right">Rs 2500</td></tr>
 <tr><td><hr></td><td><hr></td></tr>
-<tr><td>Total&nbsp;&nbsp;</td><td align="right">Rs 12500</td></tr>
+<tr><td>Total&nbsp;&nbsp;</td><td align="right">Rs 15500</td></tr>
 </table>
 </div>
 </div><br><br><br>
@@ -92,11 +91,11 @@
 <a href="javaMain.php"><button type="button" class="btn btn-success btn-sm">View Android Course</button></a>
 <br>
 <table style="margin-top:20px;">
-<tr><td>Basic Android&nbsp;&nbsp;</td><td align="right">Rs 5000</td></tr>
+<tr><td>Basic Android&nbsp;&nbsp;</td><td align="right">Rs 6000</td></tr>
 <tr><td>Advance Android&nbsp;&nbsp;</td><td align="right">Rs 3500</td></tr>
 <tr><td>Discount&nbsp;&nbsp;</td><td align="right">Rs 500</td></tr>
 <tr><td><hr></td><td><hr></td></tr>
-<tr><td>Total&nbsp;&nbsp;</td><td align="right">Rs 8000</td></tr>
+<tr><td>Total&nbsp;&nbsp;</td><td align="right">Rs 9000</td></tr>
 </table>
 </div>
 </div><br><br><br>
@@ -107,11 +106,11 @@
 <a href="angularMain.php"><button type="button" class="btn btn-success btn-sm">View Course</button></a>
 <br>
 <table style="margin-top:20px;">
-<tr><td>Angular JS&nbsp;&nbsp;</td><td align="right">Rs 4500</td></tr>
-<tr><td>Bootstrap&nbsp;&nbsp;</td><td align="right">Rs 2500</td></tr>
-<tr><td>Discount&nbsp;&nbsp;</td><td align="right">Rs 1000</td></tr>
+<tr><td>Angular JS&nbsp;&nbsp;</td><td align="right">Rs 7000</td></tr>
+<tr><td>Bootstrap&nbsp;&nbsp;</td><td align="right">Rs 3500</td></tr>
+<tr><td>Discount&nbsp;&nbsp;</td><td align="right">Rs 500</td></tr>
 <tr><td><hr></td><td><hr></td></tr>
-<tr><td>Total&nbsp;&nbsp;</td><td align="right">Rs 6000</td></tr>
+<tr><td>Total&nbsp;&nbsp;</td><td align="right">Rs 10000</td></tr>
 </table>
 </div>
 </div><br><br><br>

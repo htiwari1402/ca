@@ -1,8 +1,12 @@
 <div class="row" ng-controller="takeExamCtrl"  style="margin-top:40px;width:100%;margin-left:2%;">
+<div align="center"><h1 > {{ examName }}</h1></div>
+<br>
+<div align="right"></div>
+<br>
 <div ng-repeat="each in question" >
 <ol>
 <div ng-if="$index ==pageID"  style="min-height:300px;">
-<h3><li>{{each.text}}</li></h3>
+<h3><li>{{each.text.replace('/n=',"<br>")}}</li></h3>
 <br>
 <ol>
 <li ng-repeat="opt in each.option[0]">
