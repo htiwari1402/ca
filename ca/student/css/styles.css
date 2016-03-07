@@ -1,0 +1,99 @@
+body
+{
+	padding: 0px;
+	margin:0px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size:16px;
+	overflow-x:hidden;
+}
+#logo
+{
+	color:#999;;
+	font-size:30px;
+	font-weight:bold;
+}
+.menucrumbs
+{
+	color:#008080;
+}
+.carImg
+{
+	width:80%;
+	height:300px;
+}
+.lgButton
+{
+	width:85%;
+}
+.subIcons
+{
+	width:120px;
+	height:120px;
+	cursor:pointer;
+}
+.subIcons:hover
+{
+	width:150px;
+	height:150px;
+}
+.screenBg
+{
+	width:100%;
+	background-color:#077862;
+	
+	margin-top:50px;
+	border-top:3px solid #d60;
+	border-bottom:3px solid #d60;
+}
+.iconDisc
+{
+	height:150px;
+	max-width:200px;
+	font-size:13px;
+}
+.menuSection
+{
+	border:1px  #077862;
+	border-radius:20px;
+	padding:3px;
+	margin-bottom:2%;
+	margin-left:5px;
+	margin-right:5px;
+}
+#enquiryForm
+{
+	position:fixed;
+	top:40%;
+	left:0;
+	height:120px;
+	width:80px;
+	background-color:rgba(0,0,0,0.6);
+	color:#fff;
+	border-radius: 0px 40px 40px 0px;
+	cursor:pointer;
+}
+ol li
+{
+	margin-bottom:12px;
+}
+.feeSection
+{
+	height: 300px;
+	padding:5px;
+	margin-bottom:3%;
+}
+.feePad
+{
+	padding-top:10px;
+	border: 1px solid #d60;
+	border-radius:25px;
+	min-height:370px;
+	color:#333;
+	font-weight:bold;
+	font-size:13px;
+}
+hr
+{
+	height:1px;
+	border:1px solid #666;
+}
