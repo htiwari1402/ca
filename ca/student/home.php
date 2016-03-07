@@ -43,7 +43,7 @@
     }
     else 
     {?>
-    <li><a href="student/home.php"><span class="glyphicon glyphicon-user"></span>&nbsp;<?php echo $_SESSION['user']['fname'];?></a></li>
+    <li><a href="./home.php"><span class="glyphicon glyphicon-user"></span>&nbsp;<?php echo $_SESSION['user']['fname'];?></a></li>
    <li><a  ng-click="logout();"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Log Out</a></li> 
     <?php 
     }

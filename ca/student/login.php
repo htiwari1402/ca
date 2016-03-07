@@ -11,7 +11,12 @@
     	$userInfo = $dao->loadUserInfo($username, $password);
     	$_SESSION['isLoginValid'] = 1;
     	$_SESSION['user'] = $userInfo;
-    	include "home.php";
+    ?>
+    <script>
+    window.location = "./home.php";
+    </script>
+    <?php 
+    	//include "home.php";
     }
     else {
     	?>
