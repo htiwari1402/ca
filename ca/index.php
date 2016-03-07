@@ -1,3 +1,4 @@
+<?php session_start(); error_reporting(0);?>
 <!DOCTYPE html>
 <html lang="en-US"  xmlns:ng="http://angularjs.org" id="ng-app" ng-app="edusar">
 <head>
@@ -36,7 +37,18 @@
     <li><a href="index.php"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
     <li><a href="fees.php"><span class="glyphicon glyphicon-usd"></span>&nbsp;Fees</a></li>
     <li><a href="contactUs.php"><span class="glyphicon glyphicon-earphone"></span>&nbsp;Contact Us</a></li>
-      
+    <?php 
+    if(!isset($_SESSION['isLoginValid']) && $_SESSION['isLoginValid'] != 1)
+    {?>
+    <li><a href="login.php"><span class="glyphicon glyphicon-user"></span>&nbsp;Sign In</a></li>
+     <?php
+    }
+    else 
+    {?>
+    <li><a href="student/home.php"><span class="glyphicon glyphicon-user"></span>&nbsp;<?php echo $_SESSION['user']['fname'];?></a></li>
+    <?php 
+    }
+    ?>
     </ul>
     </div>
   </div>
